@@ -1,0 +1,7 @@
+control==0.9.4
+matplotlib==3.8.3
+numpy==2.0.0
+pytorch_lightning==2.2.1
+s5==0.0.3
+scipy==1.14.0
+torch==2.1.0

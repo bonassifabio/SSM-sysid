@@ -1,0 +1,6 @@
+# https://docs.astral.sh/ruff/configuration/
+# https://betterprogramming.pub/a-pyproject-toml-developers-cheat-sheet-5782801fb3ed
+
+
+[pylint.messages control]
+disable = unreachable, missing-function-docstring, missing-module-docstring,  prefer-logging-interpolation, line-too-long
