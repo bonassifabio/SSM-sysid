@@ -1,10 +1,30 @@
-import torch
-import torch.nn as nn
-import numpy as np
+'''
+Copyright (C) 2024 Fabio Bonassi, Carl Andersson, and co-authors
 
-from s5.layer.LinearSSM import BaseLinearSSM
-from s5.layer.initializations import S5Initializer, HippoDiagonalizedInitializer
-from s5.layer.util import parallel_scan
+This file is part of ssm.
+
+ssm is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+ssm is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Lesser General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with gddpc.  If not, see <http://www.gnu.org/licenses/>.
+'''
+
+import numpy as np
+import torch
+
+from ssm.layer.initializations import (HippoDiagonalizedInitializer,
+                                       S5Initializer)
+from ssm.layer.LinearSSM import BaseLinearSSM
+from ssm.layer.util import parallel_scan
+
 
 class S5(BaseLinearSSM):
     """A Simplified Structured State Space (S5) cell"""
